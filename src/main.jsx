@@ -8,7 +8,7 @@ import "./main.css";
 import 'rsuite/dist/rsuite.min.css';
 
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
+  <BrowserRouter basename="/PropMallAssessment">
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/search/:location/:year/" element={<Home />} />
