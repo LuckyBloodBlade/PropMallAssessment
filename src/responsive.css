@@ -1,0 +1,43 @@
+:root {
+    font-size: 16px; /* default for desktop */
+  }
+  
+  @media (max-width: 1200px) {
+    :root {
+      font-size: 15px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    :root {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    :root {
+      font-size: 13px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    :root {
+      font-size: 10px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    :root {
+      font-size: 8px;
+    }
+  }
+
+  .noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
