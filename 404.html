@@ -1,14 +1,14 @@
-<!-- public/404.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>React App</title>
-    <script>
-      // Rewrite GitHub Pages URLs to serve index.html
-      const redirectTo = '/PropMallAssessment' + location.pathname.replace('/PropMallAssessment', '');
-      sessionStorage.redirect = location.pathname + location.search + location.hash;
-      location.replace(redirectTo);
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module">
+      // Redirect all 404s to your app entry point
+      const pathname = location.pathname.replace('/PropMallAssessment', '');
+      sessionStorage.setItem('redirect', pathname + location.search + location.hash);
+      window.location.href = '/PropMallAssessment/';
     </script>
   </head>
   <body></body>

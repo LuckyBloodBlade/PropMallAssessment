@@ -12,9 +12,9 @@
   </body>
 </html>
 <script>
-  const redirect = sessionStorage.redirect;
+  const redirect = sessionStorage.getItem('redirect');
   if (redirect) {
-    delete sessionStorage.redirect;
+    sessionStorage.removeItem('redirect');
     history.replaceState(null, null, redirect);
   }
 </script>
