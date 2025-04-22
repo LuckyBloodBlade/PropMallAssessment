@@ -1,0 +1,15 @@
+<!-- public/404.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>React App</title>
+    <script>
+      // Rewrite GitHub Pages URLs to serve index.html
+      const redirectTo = '/PropMallAssessment' + location.pathname.replace('/PropMallAssessment', '');
+      sessionStorage.redirect = location.pathname + location.search + location.hash;
+      location.replace(redirectTo);
+    </script>
+  </head>
+  <body></body>
+</html>
